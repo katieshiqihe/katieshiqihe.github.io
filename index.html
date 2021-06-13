@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+/* Center image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Katie He</h1>
+<hr>
+
+<!-- Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/bird.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/trees.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/deer.jpg"style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/light.jpg"  style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <a href="https://towardsdatascience.com/music-in-python-2f054deb41f4"><img src="images/music_in_python.jpg"  style="width:100%"></a>
+  <h3>Music in Python</h3>
+  <p>With a few lines of code using Numpy and Scipy, one can easily analyze sound even if you don’t have trained musician ears and perfect pitch. Read the 2-part blog post <a href="https://towardsdatascience.com/music-in-python-2f054deb41f4">here</a> and <a href="https://towardsdatascience.com/music-in-python-part-2-4f115be3c781">here</a>.</p>
+</div>
+
+<!-- Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/crane.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/yosemite.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/sunset.jpg"style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/tin_house.jpg"  style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <a href="https://towardsdatascience.com/whats-lost-in-jpeg-e5e6e80b1f94"><img src="images/image_compression.jpeg"  style="width:80%" class="center"></a>
+  <h3>What’s lost in JPEG?</h3>
+  <p>In this <a href="https://towardsdatascience.com/whats-lost-in-jpeg-e5e6e80b1f94">post</a> I will replicate the lossy part of JPEG compression process in Python using common libraries (mostly just Numpy and Scipy for the actual compression), which includes chroma subsampling, discrete cosine transform, and quantization</p>
+</div>
+
+<!-- Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/brazil_ranch.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/fisherman.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/lassen.jpg"style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/rose.jpg"  style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <a href="https://github.com/khe35280/colorizer"><img src="images/colorizer.png"  style="width:80%" class="center"></a>
+  <h3>Twilight Zone in Color</h3>
+  <p>A project that colorizes a clip from the original Twilight Zone using a condition GAN (generative adversarial network) architecture by "watching" YouTube vidoes of a 70s TV show. Details on <a href="https://github.com/khe35280/colorizer">Github</a> and network output video <a href="https://www.youtube.com/watch?v=rqL_XY6TXzQ">here</a>.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
