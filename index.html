@@ -109,7 +109,7 @@ table {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 50%;
+    width: 25%;
   }
   .text{
     top: 40%;
@@ -120,7 +120,7 @@ table {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 300px) {
   .column {
-    width: 100%;
+    width: 50%;
   }
   .text{
     top: 40%;
@@ -147,8 +147,45 @@ table {
 
 <hr>
 
+<div class="row">
+  <div class="content">
+    <div class='container'>
+      <h2>What’s lost in JPEG?</h2>
+      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/image_compression.jpeg?raw=true"  style="width:70%" class="center">
+      <div class="overlay">
+          <div class="text">In this <a href="https://towardsdatascience.com/whats-lost-in-jpeg-e5e6e80b1f94">post</a> I will replicate the lossy part of JPEG compression process in Python using common libraries (mostly just Numpy and Scipy for the actual compression), which includes chroma subsampling, discrete cosine transform, and quantization.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="content">
+    <div class='container'>
+      <h2>Music in Python</h2>
+      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/music_in_python.jpg?raw=true"  style="width:100%" class="center">
+      <div class="overlay">
+          <div class="text">With a few lines of code using Numpy and Scipy, one can easily analyze sound even if you don’t have trained musician ears and perfect pitch. Read the 2-part blog post <a href="https://towardsdatascience.com/music-in-python-2f054deb41f4">here</a> and <a href="https://towardsdatascience.com/music-in-python-part-2-4f115be3c781">here</a>.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="content">
+    <div class='container'>
+      <h2>Twilight Zone in Color</h2>
+      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/colorizer.png?raw=true"  style="width:80%" class="center">
+      <div class="overlay">
+          <div class="text">A condition GAN (generative adversarial network) that colorizes the original Twilight Zone by "watching" YouTube vidoes of a 70s TV show. Details on <a href="https://github.com/khe35280/colorizer">Github</a> and you can watch network output video <a href="https://www.youtube.com/watch?v=rqL_XY6TXzQ">here</a>.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Gallery Grid -->
 <div class="row">
+  <h2>Photo Gallery</h2>
   <div class="column">
     <div class="content">
       <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/bird.jpg?raw=true" style="width:100%">
@@ -167,16 +204,6 @@ table {
   <div class="column">
     <div class="content">
     <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/light.jpg?raw=true"  style="width:100%">
-    </div>
-  </div>
-</div>
-
-<div class="content">
-  <div class='container'>
-    <h2>What’s lost in JPEG?</h2>
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/image_compression.jpeg?raw=true"  style="width:70%" class="center">
-    <div class="overlay">
-        <div class="text">In this <a href="https://towardsdatascience.com/whats-lost-in-jpeg-e5e6e80b1f94">post</a> I will replicate the lossy part of JPEG compression process in Python using common libraries (mostly just Numpy and Scipy for the actual compression), which includes chroma subsampling, discrete cosine transform, and quantization.</div>
     </div>
   </div>
 </div>
@@ -205,16 +232,6 @@ table {
   </div>
 </div>
 
-<div class="content">
-  <div class='container'>
-    <h2>Music in Python</h2>
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/music_in_python.jpg?raw=true"  style="width:100%" class="center">
-    <div class="overlay">
-        <div class="text">With a few lines of code using Numpy and Scipy, one can easily analyze sound even if you don’t have trained musician ears and perfect pitch. Read the 2-part blog post <a href="https://towardsdatascience.com/music-in-python-2f054deb41f4">here</a> and <a href="https://towardsdatascience.com/music-in-python-part-2-4f115be3c781">here</a>.</div>
-    </div>
-  </div>
-</div>
-
 <!-- Gallery Grid -->
 <div class="row">
   <div class="column">
@@ -235,16 +252,6 @@ table {
   <div class="column">
     <div class="content">
     <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/rose.jpg?raw=true"  style="width:100%">
-    </div>
-  </div>
-</div>
-
-<div class="content">
-  <div class='container'>
-    <h2>Twilight Zone in Color</h2>
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/colorizer.png?raw=true"  style="width:80%" class="center">
-    <div class="overlay">
-        <div class="text">A condition GAN (generative adversarial network) that colorizes the original Twilight Zone by "watching" YouTube vidoes of a 70s TV show. Details on <a href="https://github.com/khe35280/colorizer">Github</a> and you can watch network output video <a href="https://www.youtube.com/watch?v=rqL_XY6TXzQ">here.</div>
     </div>
   </div>
 </div>
