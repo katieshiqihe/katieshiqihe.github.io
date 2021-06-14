@@ -25,32 +25,30 @@ h1 {
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
+/* Create four equal columns that sits next to each other */
 .column {
-  float: left;
-  width: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
+  width: 100%;
 }
 
 /* Center image */
@@ -109,7 +107,7 @@ table {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 25%;
+    width: 50%;
   }
   .text{
     top: 40%;
@@ -120,7 +118,7 @@ table {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 300px) {
   .column {
-    width: 50%;
+    width: 100%;
   }
   .text{
     top: 40%;
@@ -191,72 +189,27 @@ table {
 <!-- Gallery Grid -->
 <div class="row">
   <div class="column">
-    <div class="content">
-      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/bird.jpg?raw=true" style="width:100%">
-    </div>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51246946931/in/dateposted/"><img src="https://live.staticflickr.com/65535/51246946931_2ebe33580d_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/31700328691/in/dateposted/"><img src="https://live.staticflickr.com/434/31700328691_41f5f0a70d_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51246232967/in/dateposted/"><img src="https://live.staticflickr.com/65535/51246232967_7ae127d754_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/trees.jpg?raw=true" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/deer.jpg?raw=true"style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/light.jpg?raw=true"  style="width:100%">
-    </div>
-  </div>
-</div>
 
-<!-- Gallery Grid -->
-<div class="row">
   <div class="column">
-    <div class="content">
-      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/crane.jpg?raw=true" style="width:100%">
-    </div>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51246236897/in/dateposted/"><img src="https://live.staticflickr.com/65535/51246236897_e6fb953c1c_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/35517461555/in/dateposted/"><img src="https://live.staticflickr.com/4281/35517461555_36641f2c01_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51246252072/in/dateposted/"><img src="https://live.staticflickr.com/65535/51246252072_7c320251ce_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/yosemite.jpg?raw=true" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/sunset.jpg?raw=true"style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/tin_house.jpg?raw=true"  style="width:100%">
-    </div>
-  </div>
-</div>
 
-<!-- Gallery Grid -->
-<div class="row">
   <div class="column">
-    <div class="content">
-      <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/brazil_ranch.jpg?raw=true" style="width:100%">
-    </div>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/31459061870/in/dateposted/"><img src="https://live.staticflickr.com/648/31459061870_0d5a181fe4_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51248031855/in/dateposted/"><img src="https://live.staticflickr.com/65535/51248031855_8c86ca6893_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>    
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/31669509342/in/dateposted/"><img src="https://live.staticflickr.com/5606/31669509342_f532472d96_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   </div>
+
   <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/fisherman.jpg?raw=true" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/lassen.jpg?raw=true"style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://github.com/khe35280/khe35280.github.io/blob/main/images/rose.jpg?raw=true"  style="width:100%">
-    </div>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51246235647/in/dateposted/"><img src="https://live.staticflickr.com/65535/51246235647_bd3d980f16_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/51247738109/in/dateposted/"><img src="https://live.staticflickr.com/65535/51247738109_47e7d71e2d_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/katiehe/38728718135/in/dateposted/"><img src="https://live.staticflickr.com/4622/38728718135_2e2b15a2ed_w.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   </div>
 </div>
 
